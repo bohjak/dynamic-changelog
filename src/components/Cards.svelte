@@ -1,0 +1,62 @@
+<script lang="ts">
+  import type { Obj } from 'src/types';
+  import { getDiff } from '../lib';
+  import Card from './Card.svelte';
+
+  // PROPS
+  export let schemas: [Obj, Obj];
+
+  // SCRIPT
+  const diffMaps = getDiff(...schemas);
+  const additions = diffMaps.additions;
+  const removals = diffMaps.removals;
+  const changes = diffMaps.changes;
+</script>
+
+<section class="wrapper">
+  {#if additions && additions.size}
+    <section class="cards">
+      <h2>Added</h2>
+      {#each Array.from(additions.values()) as diff}
+        <Card {diff} />
+      {/each}
+    </section>
+  {/if}
+  {#if removals && removals.size}
+    <section class="cards">
+      <h2>Removed</h2>
+      {#each Array.from(removals.values()) as diff}
+        <Card {diff} />
+      {/each}
+    </section>
+  {/if}
+  {#if changes && changes.size}
+    <section class="cards">
+      <h2>Changed</h2>
+      {#each Array.from(changes.values()) as diff}
+        <Card {diff} />
+      {/each}
+    </section>
+  {/if}
+</section>
+
+<style>
+  section.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 4em 2em;
+    padding: 2em;
+  }
+
+  section.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 42em;
+  }
+
+  h2 {
+    margin: 0;
+    margin-bottom: 0.5em;
+  }
+</style>
