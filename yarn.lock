@@ -1965,6 +1965,11 @@ json-parse-even-better-errors@^2.3.0:
   resolved "https://registry.yarnpkg.com/json-parse-even-better-errors/-/json-parse-even-better-errors-2.3.1.tgz#7c47805a94319928e05777405dc12e1f7a4ee02d"
   integrity sha512-xyFwyhro/JEof6Ghe2iz2NcXoj2sloNsWr/XsERDK/oiPCfaNhl5ONfp+jQdAZRQQ0IJWNzH9zIZF7li91kh2w==
 
+json-schema-changelog@0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/json-schema-changelog/-/json-schema-changelog-0.1.2.tgz#f9d9d0150ce7991d4c2ee060ddb24854c5372233"
+  integrity sha512-RQNw+cgbVZPsnDj5ZyaVRrHEGv1pBD/qN+6ZB2ugZvb0WfzvvU2gkT5FKycq/yhjBvUMZtyeiY9CKWCBXyJQmA==
+
 json-schema-traverse@^0.4.1:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/json-schema-traverse/-/json-schema-traverse-0.4.1.tgz#69f6a87d9513ab8bb8fe63bdb0979c448e684660"

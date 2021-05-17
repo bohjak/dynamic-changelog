@@ -1,6 +1,6 @@
 <script lang="ts">
   import Cards from './components/Cards.svelte';
-  import { fetchSchema } from './lib';
+  import { fetchSchema } from './lib/fetch-schema';
 
   // SCRIPT
   const urlParams = new URLSearchParams(window.location.search);

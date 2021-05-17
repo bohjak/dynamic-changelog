@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { Obj } from 'src/types';
-  import { getDiff } from '../lib';
+  import { getDiff } from 'json-schema-changelog';
   import Card from './Card.svelte';
 
   // PROPS

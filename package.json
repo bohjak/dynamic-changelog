@@ -8,6 +8,7 @@
     "test": "web-test-runner \"src/**/*.test.ts\""
   },
   "dependencies": {
+    "json-schema-changelog": "0.1.2",
     "svelte": "^3.37.0",
     "svelte-json-tree": "^0.1.0"
   },
