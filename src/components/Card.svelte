@@ -14,7 +14,7 @@
     value: { before, after },
   } = diff;
 
-  type IconSymbol = 'R' | 'A' | 'M';
+  type IconSymbol = 'R' | 'A' | 'C';
   const getIconSymbol = (type: DiffType): IconSymbol => {
     switch (type) {
       case DiffType.ADDITION:
@@ -22,7 +22,7 @@
       case DiffType.REMOVAL:
         return 'R';
       case DiffType.CHANGE:
-        return 'M';
+        return 'C';
     }
   };
 
@@ -81,7 +81,7 @@
   span.icon.type-R {
     color: red;
   }
-  span.icon.type-M {
+  span.icon.type-C {
     color: orange;
   }
 

@@ -2,8 +2,8 @@
 Fetches 2 schemas with a GET request, compares them, and displays the changelog.
 
 # Configuration
-The following options are specified through URLSearchParams:
-| query | type | description |
+The fetch requests are configured through the following `options` object in URLSearchParams:
+| property | type | description |
 | --- | --- | --- |
 | urlTemplate | `string` | URL for the requests with simple templating - anything between two `%` will be replaced with corresponding value from `vars` |
 | vars | `Record<string, string>` | Variables used for placeholder replacement; common to both requests |
